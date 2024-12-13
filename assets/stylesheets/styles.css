@@ -1,0 +1,193 @@
+/* General Reset */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(211, 215, 218);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+    color: black;
+    text-align: left;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    letter-spacing: 10px;
+    font-size: 30px;
+    margin: 0;
+	font-weight: normal;
+	
+}
+
+h2, h3 {
+    font-weight: normal;
+    font-style: normal;
+    margin: 0;
+}
+
+/* Logo Section */
+.logo {
+    word-spacing: 10px;
+    padding: 20px;
+    background-color: transparent; /* Original layout look */
+	display: inline-block;
+
+	
+}
+
+/* Paragraphs */
+p {
+    color: #0062ff;
+    font-size: 20px;
+    line-height: 30px;
+    word-spacing: 30px;
+    margin: 10px 0;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+/* Links */
+a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+a.yellow {
+    color: yellow;
+}
+
+a.blue {
+    color: #0062ff;
+}
+
+/* Div Containers */
+div {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    margin: 0;
+    background-color: rgb(211, 215, 218);
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+    display: flex;
+	align-items: center;
+    padding: 10px 20px;
+}
+
+/* Hover Effect for Divs */
+div:hover {
+    background-color: rgb(6, 172, 255); /* Slightly darker on hover */
+}
+.green-hover:hover {
+    background-color: rgb(6, 255, 85); /* Slightly darker on hover */
+}
+
+/* Separator Bars */
+.lightgreen, .lightyellow, .lightblue {
+    height: 0.5px;
+    transition: background-color 0.3s ease;
+}
+
+.lightgreen {
+    background-color: rgb(8, 255, 61);
+}
+
+.lightyellow {
+    background-color: rgb(247, 255, 8);
+}
+
+.lightblue {
+    background-color: rgb(8, 119, 255);
+}
+
+.lightgreen:hover {
+    background-color: rgb(211, 215, 218);
+}
+
+.lightyellow:hover {
+    background-color: rgb(211, 215, 218);
+}
+
+.lightblue:hover {
+    background-color: rgb(211, 215, 218);
+}
+
+/* Image Container */
+.image-container {
+    display: inline-block;
+    text-align: center; /* Center-aligns image and title */
+    margin: px; /* Adds spacing between containers */
+}
+
+/* Images */
+.small-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: inline-block;
+    margin: 0 auto;
+    border-radius: 5px; /* Optional rounded corners */
+}
+
+/* Image Titles */
+.image-title-1 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #e5ff22; /* Set the color for titles */
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.image-title-2 {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #22ff38; /* Set the color for titles */
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Gallery Container */
+.gallery {
+    display: flex;
+    flex-wrap: nowrap; /* Allows images to wrap to the next line */
+    justify-content:start; /* Centers the images in the gallery */
+    gap: 20px; /* Adds spacing between items */
+}
+
+
+@media(max-width: 1200px){
+
+    section, div{
+      width: 50%;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+  
+  @media(max-width: 768px){
+    
+    section, div{
+      width: 100%;
+      display: block;
+      padding-bottom: 4rem;
+    }
+  }  
+
+  @media(max-width: 1200px){
+
+    .gallery{
+      width: 50%;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+  
+  @media(max-width: 768px){
+    
+    .gallery{
+      width: 100%;
+      display: block;
+      padding-bottom: 4rem;
+    }
+  }  
